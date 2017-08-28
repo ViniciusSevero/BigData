@@ -24,3 +24,7 @@ db.clientes.find({cpf: {$gt: "111.", $lt: "133"}})
 
 //EX 4.2
 db.clientes.find({nasc: {$lt: new Date(1999, 0, 1)}})
+
+
+//EX 4.3
+db.clientes.find({"endereco.cidade": {$eq: "São Paulo"}})
